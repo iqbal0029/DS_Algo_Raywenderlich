@@ -16,15 +16,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func linkListTest() {
-        example(of: "removing the last node") {
-            var list = LinkedList<Int>()
-            list.push(3)
-            list.push(2)
-            list.push(1)
-            print("Before removing last node: \(list)")
-            let removedValue = list.removeLast()
-            print("After removing last node: \(list)")
-            print("Removed value: " + String(describing: removedValue))
+        example(of: "linked list cow") {
+            var list1 = LinkedList<Int>()
+            list1.append(1)
+            list1.append(2)
+            var list2 = list1
+            print("List1: \(list1)")
+            print("List2: \(list2)")
+            print("After appending 3 to list2")
+            list2.append(3)
+            print("List1: \(list1)")
+            print("List2: \(list2)")
         }
     }
 }
