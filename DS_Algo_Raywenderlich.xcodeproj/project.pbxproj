@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		3AA3098D21C5654C002FD4F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3098C21C5654C002FD4F0 /* AppDelegate.swift */; };
-		3AA3098F21C5654C002FD4F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3098E21C5654C002FD4F0 /* ViewController.swift */; };
 		3AA3099121C5654F002FD4F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3099021C5654F002FD4F0 /* Assets.xcassets */; };
 		3AA3099421C5654F002FD4F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3099221C5654F002FD4F0 /* Main.storyboard */; };
+		F0CEE91521C75EED001508BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CEE91421C75EED001508BB /* ViewController.swift */; };
+		F0CEE91721C75F97001508BB /* LinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CEE91621C75F97001508BB /* LinkList.swift */; };
+		F0CEE91A21C764AF001508BB /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CEE91921C764AF001508BB /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3AA3098921C5654C002FD4F0 /* DS_Algo_Raywenderlich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DS_Algo_Raywenderlich.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA3098C21C5654C002FD4F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3AA3098E21C5654C002FD4F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3AA3099021C5654F002FD4F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AA3099321C5654F002FD4F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AA3099521C5654F002FD4F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AA3099621C5654F002FD4F0 /* DS_Algo_Raywenderlich.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DS_Algo_Raywenderlich.entitlements; sourceTree = "<group>"; };
+		F0CEE91421C75EED001508BB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0CEE91621C75F97001508BB /* LinkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkList.swift; sourceTree = "<group>"; };
+		F0CEE91921C764AF001508BB /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,13 +58,31 @@
 			isa = PBXGroup;
 			children = (
 				3AA3098C21C5654C002FD4F0 /* AppDelegate.swift */,
-				3AA3098E21C5654C002FD4F0 /* ViewController.swift */,
+				F0CEE91821C76474001508BB /* DataStructure */,
 				3AA3099021C5654F002FD4F0 /* Assets.xcassets */,
-				3AA3099221C5654F002FD4F0 /* Main.storyboard */,
-				3AA3099521C5654F002FD4F0 /* Info.plist */,
+				F0CEE91B21C764B2001508BB /* Helpers */,
 				3AA3099621C5654F002FD4F0 /* DS_Algo_Raywenderlich.entitlements */,
 			);
 			path = DS_Algo_Raywenderlich;
+			sourceTree = "<group>";
+		};
+		F0CEE91821C76474001508BB /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				F0CEE91621C75F97001508BB /* LinkList.swift */,
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		F0CEE91B21C764B2001508BB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F0CEE91421C75EED001508BB /* ViewController.swift */,
+				F0CEE91921C764AF001508BB /* Helpers.swift */,
+				3AA3099221C5654F002FD4F0 /* Main.storyboard */,
+				3AA3099521C5654F002FD4F0 /* Info.plist */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,8 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AA3098F21C5654C002FD4F0 /* ViewController.swift in Sources */,
+				F0CEE91521C75EED001508BB /* ViewController.swift in Sources */,
+				F0CEE91721C75F97001508BB /* LinkList.swift in Sources */,
 				3AA3098D21C5654C002FD4F0 /* AppDelegate.swift in Sources */,
+				F0CEE91A21C764AF001508BB /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,11 +298,12 @@
 				CODE_SIGN_ENTITLEMENTS = DS_Algo_Raywenderlich/DS_Algo_Raywenderlich.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = DS_Algo_Raywenderlich/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DS_Algo_Raywenderlich/Helpers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zerones.DS-Algo-Raywenderlich";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -292,11 +317,12 @@
 				CODE_SIGN_ENTITLEMENTS = DS_Algo_Raywenderlich/DS_Algo_Raywenderlich.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = DS_Algo_Raywenderlich/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DS_Algo_Raywenderlich/Helpers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zerones.DS-Algo-Raywenderlich";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
