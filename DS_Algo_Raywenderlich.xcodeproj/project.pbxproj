@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A26832821CBDDE200331A82 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26832721CBDDE200331A82 /* Stack.swift */; };
+		3A26832A21CBE25800331A82 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26832921CBE25800331A82 /* Queue.swift */; };
+		3A26832C21CBF04600331A82 /* DoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26832B21CBF04600331A82 /* DoublyLinkedList.swift */; };
+		3A26832E21CBF5CC00331A82 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26832D21CBF5CC00331A82 /* RingBuffer.swift */; };
 		3AA3098D21C5654C002FD4F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3098C21C5654C002FD4F0 /* AppDelegate.swift */; };
 		3AA3099121C5654F002FD4F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3099021C5654F002FD4F0 /* Assets.xcassets */; };
 		3AA3099421C5654F002FD4F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3099221C5654F002FD4F0 /* Main.storyboard */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A26832721CBDDE200331A82 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		3A26832921CBE25800331A82 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		3A26832B21CBF04600331A82 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
+		3A26832D21CBF5CC00331A82 /* RingBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
 		3AA3098921C5654C002FD4F0 /* DS_Algo_Raywenderlich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DS_Algo_Raywenderlich.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA3098C21C5654C002FD4F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AA3099021C5654F002FD4F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				F0CEE91621C75F97001508BB /* LinkList.swift */,
+				3A26832D21CBF5CC00331A82 /* RingBuffer.swift */,
+				3A26832B21CBF04600331A82 /* DoublyLinkedList.swift */,
+				3A26832721CBDDE200331A82 /* Stack.swift */,
+				3A26832921CBE25800331A82 /* Queue.swift */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -155,8 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A26832821CBDDE200331A82 /* Stack.swift in Sources */,
+				3A26832A21CBE25800331A82 /* Queue.swift in Sources */,
+				3A26832C21CBF04600331A82 /* DoublyLinkedList.swift in Sources */,
 				F0CEE91521C75EED001508BB /* ViewController.swift in Sources */,
 				F0CEE91721C75F97001508BB /* LinkList.swift in Sources */,
+				3A26832E21CBF5CC00331A82 /* RingBuffer.swift in Sources */,
 				3AA3098D21C5654C002FD4F0 /* AppDelegate.swift in Sources */,
 				F0CEE91A21C764AF001508BB /* Helpers.swift in Sources */,
 			);

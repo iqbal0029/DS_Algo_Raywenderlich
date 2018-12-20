@@ -12,9 +12,19 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        linkListTest()
+        queueTest()
     }
 
+    func queueTest() {
+        var queue = QueueStack<String>()
+        queue.enqueue("Ray")
+        queue.enqueue("Brian")
+        queue.enqueue("Eric")
+        print(queue.dequeue())
+        print(queue)
+        print(queue.peek)
+    }
+    
     func linkListTest() {
         example(of: "linked list cow") {
             var list1 = LinkedList<Int>()
@@ -29,5 +39,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             print("List2: \(list2)")
         }
     }
+    
+    func stackTest() {
+        example(of: "initializing a stack from an array literal") {
+            var stack: Stack = [1.0, 2.0, 3.0, 4.0]
+            print(stack)
+            stack.pop()
+        }
+    }
+    
 }
 
