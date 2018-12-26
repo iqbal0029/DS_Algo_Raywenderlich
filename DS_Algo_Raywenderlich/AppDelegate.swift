@@ -12,9 +12,20 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        treeTest()
+        trieTest()
     }
 
+    func trieTest() {
+        example(of: "insert and contains") {
+            let trie = Trie<String>()
+            trie.insert("cute")
+            trie.insert("boot")
+            if trie.contains("boott") {
+                print("cute is in the trie")
+            }
+        }
+    }
+    
     func treeTest() {
         var exampleTree: BinarySearchTree<Int> {
             var bst = BinarySearchTree<Int>()
