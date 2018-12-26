@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A107F8321CD418A00BBE862 /* BinaryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A107F8221CD418A00BBE862 /* BinaryNode.swift */; };
+		3A107F8521CD4DBB00BBE862 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A107F8421CD4DBB00BBE862 /* BinarySearchTree.swift */; };
+		3A1A374F21CE087F00EB3725 /* AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A374D21CE087E00EB3725 /* AVLTree.swift */; };
+		3A1A375021CE087F00EB3725 /* AVLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A374E21CE087F00EB3725 /* AVLNode.swift */; };
+		3A1A375521CF614B00EB3725 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A375421CF614B00EB3725 /* TrieNode.swift */; };
 		3A26832821CBDDE200331A82 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26832721CBDDE200331A82 /* Stack.swift */; };
 		3A26832A21CBE25800331A82 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26832921CBE25800331A82 /* Queue.swift */; };
 		3A26832C21CBF04600331A82 /* DoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A26832B21CBF04600331A82 /* DoublyLinkedList.swift */; };
@@ -21,6 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A107F8221CD418A00BBE862 /* BinaryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryNode.swift; sourceTree = "<group>"; };
+		3A107F8421CD4DBB00BBE862 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
+		3A1A374D21CE087E00EB3725 /* AVLTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVLTree.swift; sourceTree = "<group>"; };
+		3A1A374E21CE087F00EB3725 /* AVLNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVLNode.swift; sourceTree = "<group>"; };
+		3A1A375421CF614B00EB3725 /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
 		3A26832721CBDDE200331A82 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		3A26832921CBE25800331A82 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		3A26832B21CBF04600331A82 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
@@ -48,6 +58,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A107F8121CD417200BBE862 /* BinaryTree */ = {
+			isa = PBXGroup;
+			children = (
+				3A107F8221CD418A00BBE862 /* BinaryNode.swift */,
+				3A107F8421CD4DBB00BBE862 /* BinarySearchTree.swift */,
+			);
+			path = BinaryTree;
+			sourceTree = "<group>";
+		};
+		3A1A374C21CE085D00EB3725 /* AVL Tree */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A374E21CE087F00EB3725 /* AVLNode.swift */,
+				3A1A374D21CE087E00EB3725 /* AVLTree.swift */,
+			);
+			path = "AVL Tree";
+			sourceTree = "<group>";
+		};
+		3A1A375321CF60E600EB3725 /* Trie */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A375421CF614B00EB3725 /* TrieNode.swift */,
+			);
+			path = Trie;
+			sourceTree = "<group>";
+		};
 		3AA3098021C5654C002FD4F0 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +116,9 @@
 			isa = PBXGroup;
 			children = (
 				F06A56D821CCC4FF001DB02C /* TreeNode.swift */,
+				3A107F8121CD417200BBE862 /* BinaryTree */,
+				3A1A374C21CE085D00EB3725 /* AVL Tree */,
+				3A1A375321CF60E600EB3725 /* Trie */,
 			);
 			path = Trees;
 			sourceTree = "<group>";
@@ -180,7 +219,12 @@
 			files = (
 				3A26832821CBDDE200331A82 /* Stack.swift in Sources */,
 				3A26832A21CBE25800331A82 /* Queue.swift in Sources */,
+				3A107F8521CD4DBB00BBE862 /* BinarySearchTree.swift in Sources */,
+				3A1A375521CF614B00EB3725 /* TrieNode.swift in Sources */,
+				3A1A374F21CE087F00EB3725 /* AVLTree.swift in Sources */,
+				3A107F8321CD418A00BBE862 /* BinaryNode.swift in Sources */,
 				F06A56D921CCC4FF001DB02C /* TreeNode.swift in Sources */,
+				3A1A375021CE087F00EB3725 /* AVLNode.swift in Sources */,
 				3A26832C21CBF04600331A82 /* DoublyLinkedList.swift in Sources */,
 				F0CEE91521C75EED001508BB /* ViewController.swift in Sources */,
 				F0CEE91721C75F97001508BB /* LinkList.swift in Sources */,
