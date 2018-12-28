@@ -12,17 +12,41 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        trieTest()
+        heapTest()
+    }
+
+    func heapTest() {
+        var heap = Heap(sort: >, elements: [1,12,3,4,1,6,8,7])
+        while !heap.isEmpty {
+            print(heap.remove()!)
+        }
+    }
+
+    func searchTest() {
+        let array = [1, 5, 15, 17, 19, 22, 24, 31, 105, 150]
+        let search31 = array.index(of: 31)
+        let binarySearch31 = array.binarySearch(for: 31)
+        print("index(of:): \(String(describing: search31))")
+        print("binarySearch(for:): \(String(describing: binarySearch31))")
     }
 
     func trieTest() {
-        example(of: "insert and contains") {
+        example(of: "prefix matching") {
             let trie = Trie<String>()
-            trie.insert("cute")
-            trie.insert("boot")
-            if trie.contains("boott") {
-                print("cute is in the trie")
-            }
+            trie.insert("car")
+            trie.insert("card")
+            trie.insert("care")
+            trie.insert("cared")
+            trie.insert("cars")
+            trie.insert("carbs")
+            trie.insert("carapace")
+            trie.insert("cargo")
+            /*print("\nCollections starting with \"car\"")
+            let prefixedWithCar = trie.collections(startingWith: "car")
+            print(prefixedWithCar)*/
+            print("\nCollections starting with \"care\"")
+            let prefixedWithCare = trie.collections(startingWith: "care")
+            print(prefixedWithCare)
         }
     }
     
@@ -48,13 +72,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func queueTest() {
-        var queue = QueueStack<String>()
+        /*var queue = QueueStack<String>()
         queue.enqueue("Ray")
         queue.enqueue("Brian")
         queue.enqueue("Eric")
         print(queue.dequeue())
         print(queue)
-        print(queue.peek)
+        print(queue.peek)*/
     }
     
     func linkListTest() {
