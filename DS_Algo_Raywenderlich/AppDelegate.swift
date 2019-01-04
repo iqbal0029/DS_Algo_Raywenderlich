@@ -12,7 +12,40 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        heapTest()
+        sortTest()
+    }
+
+    func sortTest() {
+        example(of: "bubble sort") {
+            var array = [9, 4, 10, 3]
+            print("Original: \(array)")
+            bubbleSort(&array)
+            print("Bubble sorted: \(array)")
+        }
+        example(of: "selection sort") {
+            var array = [9, 4, 10, 3]
+            print("Original: \(array)")
+            selectionSort(&array)
+            print("Selection sorted: \(array)")
+        }
+        example(of: "insertion sort") {
+            var array = [9, 4, 10, 3]
+            print("Original: \(array)")
+            insertionSort(&array)
+            print("Insertion sorted: \(array)")
+        }
+        example(of: "merge sort") {
+            let array = [7, 2, 6, 3, 9]
+            print("Original: \(array)")
+            print("Merge sorted: \(mergeSort(array))")
+        }
+    }
+
+    func priorityQueueTest() {
+        var priorityQueue = PriorityQueue(sort: <, elements: [1,12,3,4,1,6,8,7])
+        while !priorityQueue.isEmpty {
+            print(priorityQueue.dequeue()!)
+        }
     }
 
     func heapTest() {
@@ -49,7 +82,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             print(prefixedWithCare)
         }
     }
-    
+
     func treeTest() {
         var exampleTree: BinarySearchTree<Int> {
             var bst = BinarySearchTree<Int>()
