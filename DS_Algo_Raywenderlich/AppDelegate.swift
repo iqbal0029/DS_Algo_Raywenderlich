@@ -16,7 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func sortTest() {
-        example(of: "bubble sort") {
+       /* example(of: "bubble sort") {
             var array = [9, 4, 10, 3]
             print("Original: \(array)")
             bubbleSort(&array)
@@ -44,7 +44,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             print("Original array: \(array)")
             array.radixSort()
             print("Radix sorted: \(array)")
-        }
+        }*/
+        /*let heap = Heap(sort: >, elements: [6, 12, 2, 26, 8, 18, 21, 9, 5])
+        print(heap.sorted())*/
+        var list = [12, 0, 3, 9, 2, 21, 18, 27, 1, 5, 8, -1, 8]
+        quickSortMedian(&list, low: 0, high: list.count - 1)
+        print(list)
     }
 
     func priorityQueueTest() {
