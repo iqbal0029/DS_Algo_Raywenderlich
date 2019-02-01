@@ -27,6 +27,11 @@
 		F0774D5521D6152E002ABC68 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0774D5421D6152E002ABC68 /* InsertionSort.swift */; };
 		F07DF3B221DDD8DD004233C9 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07DF3B121DDD8DD004233C9 /* MergeSort.swift */; };
 		F07DF3B421DF2E90004233C9 /* RadixSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07DF3B321DF2E90004233C9 /* RadixSort.swift */; };
+		F0896D4F22044DE600DA6342 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0896D4E22044DE600DA6342 /* Graph.swift */; };
+		F0896D5122044EFD00DA6342 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0896D5022044EFD00DA6342 /* Vertex.swift */; };
+		F0896D5322044F0C00DA6342 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0896D5222044F0C00DA6342 /* Edge.swift */; };
+		F0896D552204512300DA6342 /* AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0896D542204512300DA6342 /* AdjacencyList.swift */; };
+		F0896D57220458F400DA6342 /* Network.png in Resources */ = {isa = PBXBuildFile; fileRef = F0896D56220458F400DA6342 /* Network.png */; };
 		F0C8D14021D48DA200C6F3C7 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C8D13F21D48DA200C6F3C7 /* BinarySearch.swift */; };
 		F0C8D14321D4972900C6F3C7 /* BinaryHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C8D14221D4972900C6F3C7 /* BinaryHeap.swift */; };
 		F0CEE91521C75EED001508BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CEE91421C75EED001508BB /* ViewController.swift */; };
@@ -64,6 +69,11 @@
 		F0774D5421D6152E002ABC68 /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
 		F07DF3B121DDD8DD004233C9 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 		F07DF3B321DF2E90004233C9 /* RadixSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadixSort.swift; sourceTree = "<group>"; };
+		F0896D4E22044DE600DA6342 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		F0896D5022044EFD00DA6342 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		F0896D5222044F0C00DA6342 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		F0896D542204512300DA6342 /* AdjacencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyList.swift; sourceTree = "<group>"; };
+		F0896D56220458F400DA6342 /* Network.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Network.png; sourceTree = "<group>"; };
 		F0C8D13F21D48DA200C6F3C7 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		F0C8D14221D4972900C6F3C7 /* BinaryHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryHeap.swift; sourceTree = "<group>"; };
 		F0CEE91421C75EED001508BB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +180,19 @@
 			path = Sorting;
 			sourceTree = "<group>";
 		};
+		F0896D4D22044DC200DA6342 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				F0896D5222044F0C00DA6342 /* Edge.swift */,
+				F0896D5022044EFD00DA6342 /* Vertex.swift */,
+				F0896D4E22044DE600DA6342 /* Graph.swift */,
+				F0896D542204512300DA6342 /* AdjacencyList.swift */,
+				F0896D56220458F400DA6342 /* Network.png */,
+			);
+			name = Graph;
+			path = Trees;
+			sourceTree = "<group>";
+		};
 		F0C8D13C21D4800A00C6F3C7 /* Stack and Queue */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +236,7 @@
 				F0C8D13D21D4802000C6F3C7 /* LinkList */,
 				F0C8D13C21D4800A00C6F3C7 /* Stack and Queue */,
 				F06A56DA21CCC505001DB02C /* Trees */,
+				F0896D4D22044DC200DA6342 /* Graph */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -299,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AA3099121C5654F002FD4F0 /* Assets.xcassets in Resources */,
+				F0896D57220458F400DA6342 /* Network.png in Resources */,
 				3AA3099421C5654F002FD4F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,7 +359,11 @@
 				F0CEE91521C75EED001508BB /* ViewController.swift in Sources */,
 				F0CEE91721C75F97001508BB /* LinkList.swift in Sources */,
 				F0FC901E21F7399B008C8848 /* QuicksortDutchFlag.swift in Sources */,
+				F0896D4F22044DE600DA6342 /* Graph.swift in Sources */,
 				3A26832E21CBF5CC00331A82 /* RingBuffer.swift in Sources */,
+				F0896D5322044F0C00DA6342 /* Edge.swift in Sources */,
+				F0896D552204512300DA6342 /* AdjacencyList.swift in Sources */,
+				F0896D5122044EFD00DA6342 /* Vertex.swift in Sources */,
 				3AA3098D21C5654C002FD4F0 /* AppDelegate.swift in Sources */,
 				F0C8D14321D4972900C6F3C7 /* BinaryHeap.swift in Sources */,
 				F0CEE91A21C764AF001508BB /* Helpers.swift in Sources */,
