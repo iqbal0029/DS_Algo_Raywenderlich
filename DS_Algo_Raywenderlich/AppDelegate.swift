@@ -16,7 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func graphTest() {
-        let graph = AdjacencyList<String>()
+        /*let graph = AdjacencyMatrix<String>()
         let singapore = graph.createVertex(data: "Singapore")
         let tokyo = graph.createVertex(data: "Tokyo")
         let hongKong = graph.createVertex(data: "Hong Kong")
@@ -44,7 +44,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         print("--------------------------------")
         for edge in graph.edges(from: sanFrancisco) {
             print("from: \(edge.source) to: \(edge.destination)")
-        }
+        }*/
+
+        breadthFirstSearchTest()
     }
 
     func sortTest() {

@@ -55,3 +55,8 @@ extension AdjacencyList: CustomStringConvertible {
         return result
     }
 }
+/*
+ If there are few edges in your graph, it is considered a sparse graph, and an adjacency list would be a good fit. An adjacency matrix would be a bad choice for a sparse graph, because lots of memory will be wasted since there aren't many edges.
+If your graph has lots of edges, it's considered a dense graph, and an adjacency matrix
+ would be a better fit as you'd be able to access your weights and edges far more quickly.
+ */
